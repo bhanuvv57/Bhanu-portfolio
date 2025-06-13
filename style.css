@@ -1,0 +1,171 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3b82f6;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #e0e7ff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 1rem;
+}
+
+h1, h2 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+}
+
+.photo-placeholder {
+    width: 180px;
+    height: 180px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 1rem auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-weight: 600;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Projects Section */
+#projects .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#projects .project-item {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+#projects .project-item a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#projects .project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(59,130,246,0.2);
+    max-width: 500px;
+    margin: auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+#contact button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #2563eb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #888;
+    border-top: 1px solid #ddd;
+    margin-top: 60px;
+}
+
+/* Social Links */
+.social-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #3b82f6;
+}
+
+.social-links a:hover {
+    color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #projects .project-list {
+        flex-direction: column;
+    }
+}
